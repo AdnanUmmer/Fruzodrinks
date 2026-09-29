@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "lemon-salt",
+    "page": 2,
+    "dimensions": [
+      459,
+      775
+    ],
+    "source": "Unchanged catalogue pixels; alpha matte extraction; base partly occluded by catalogue fruit."
+  },
+  {
+    "slug": "lemon",
+    "page": 2,
+    "dimensions": [
+      450,
+      771
+    ],
+    "source": "Unchanged catalogue pixels; alpha matte extraction; base partly occluded by catalogue fruit."
+  },
+  {
+    "slug": "cola",
+    "page": 3,
+    "dimensions": [
+      460,
+      774
+    ],
+    "source": "Unchanged catalogue pixels; alpha matte extraction; base partly occluded by catalogue fruit."
+  },
+  {
+    "slug": "dew",
+    "page": 3,
+    "dimensions": [
+      445,
+      769
+    ],
+    "source": "Unchanged catalogue pixels; alpha matte extraction; base partly occluded by catalogue fruit."
+  },
+  {
+    "slug": "apple",
+    "page": 4,
+    "dimensions": [
+      486,
+      770
+    ],
+    "source": "Unchanged catalogue pixels; alpha matte extraction; base partly occluded by catalogue fruit."
+  },
+  {
+    "slug": "pineapple",
+    "page": 4,
+    "dimensions": [
+      475,
+      772
+    ],
+    "source": "Unchanged catalogue pixels; alpha matte extraction; base partly occluded by catalogue fruit."
+  },
+  {
+    "slug": "mixed-fruits",
+    "page": 5,
+    "dimensions": [
+      534,
+      777
+    ],
+    "source": "Unchanged catalogue pixels; alpha matte extraction; base partly occluded by catalogue fruit."
+  },
+  {
+    "slug": "mango",
+    "page": 5,
+    "dimensions": [
+      449,
+      780
+    ],
+    "source": "Unchanged catalogue pixels; alpha matte extraction; base partly occluded by catalogue fruit."
+  },
+  {
+    "slug": "green-apple",
+    "page": 6,
+    "dimensions": [
+      483,
+      773
+    ],
+    "source": "Unchanged catalogue pixels; alpha matte extraction; base partly occluded by catalogue fruit."
+  },
+  {
+    "slug": "nannari",
+    "page": 6,
+    "dimensions": [
+      458,
+      773
+    ],
+    "source": "Unchanged catalogue pixels; alpha matte extraction; base partly occluded by catalogue fruit."
+  }
+]

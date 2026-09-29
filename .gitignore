@@ -1,0 +1,16 @@
+.venv/
+**/node_modules/
+**/.next/
+**/__pycache__/
+**/*.pyc
+**/.env
+**/.env.local
+**/db.sqlite3
+**/media/
+**/staticfiles/
+**/*.tsbuildinfo
+source/original-*.png
+source/page-*.png
+source/*-check.png
+qa/screenshots/
+*.log
