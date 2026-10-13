@@ -15,7 +15,7 @@ export function FlavorScene({product, index}: {product: Product; index: number})
     <div className="bottle-orbit">
       <div className="bottle-shadow" aria-hidden="true" />
       <div className="bottle-tilt">
-        {index === 0 && <div className="bottle-ghost" aria-hidden="true"><ProductImage product={product} priority decorative /></div>}
+        {index === 0 && <div className="bottle-ghost" aria-hidden="true"><ProductImage product={product} decorative /></div>}
         <div className="bottle-colour"><ProductImage product={product} priority={index===0} /></div>
       </div>
     </div>

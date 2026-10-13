@@ -1,21 +1,25 @@
 import 'server-only';
 import { cache } from 'react';
-import type { Product, SiteContent } from '@/types/catalogue';
+import { validateOrigin } from './origin.mjs';
+import type { FAQ, Product, SiteContent } from '@/types/catalogue';
 
-const API = process.env.API_ORIGIN || 'http://127.0.0.1:8000';
-export const SITE_ORIGIN = process.env.SITE_ORIGIN || 'http://localhost:3000';
+const API = process.env.API_ORIGIN || 'http://127.0.0.1:8017';
+export const SITE_ORIGIN = validateOrigin(process.env.SITE_ORIGIN || 'http://127.0.0.1:3000', process.env.DEPLOYMENT_ENV === 'production');
 
 async function request<T>(path: string): Promise<T> {
   const response = await fetch(`${API}/api/${path}/`, {
+    headers: process.env.DEPLOYMENT_ENV==='production'?{'X-Forwarded-Proto':'https'}:{},
     cache: 'no-store', signal: AbortSignal.timeout(8000),
   });
   if (!response.ok) throw new Error(`Catalogue request failed (${response.status}).`);
   return response.json() as Promise<T>;
 }
 export const getProducts = cache(() => request<Product[]>('products'));
+export const getFAQs = cache(() => request<FAQ[]>('faqs'));
 export const getSite = cache(() => request<SiteContent>('site'));
 export const getProduct = cache(async (slug: string) => {
   const response = await fetch(`${API}/api/products/${encodeURIComponent(slug)}/`, {
+    headers: process.env.DEPLOYMENT_ENV==='production'?{'X-Forwarded-Proto':'https'}:{},
     cache: 'no-store', signal: AbortSignal.timeout(8000),
   });
   if (response.status === 404) return null;

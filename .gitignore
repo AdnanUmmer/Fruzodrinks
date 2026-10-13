@@ -14,3 +14,8 @@ source/page-*.png
 source/*-check.png
 qa/screenshots/
 *.log
+
+**/.test-media-*/
+backups/
+*.dump
+*.tar.gz

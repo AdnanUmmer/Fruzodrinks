@@ -1,3 +1,5 @@
+import { pageMetadata, breadcrumbs } from '@/lib/seo';
+import { StructuredData } from '@/components/StructuredData';
 import type { Metadata } from 'next';
 import type { CSSProperties } from 'react';
 import Image from 'next/image';
@@ -11,10 +13,7 @@ type Props={params:Promise<{slug:string}>};
 export async function generateMetadata({params}:Props):Promise<Metadata> {
   const product=await getProduct((await params).slug);
   if(!product) return {title:'Flavour not found',robots:{index:false}};
-  return {title:product.flavor,description:product.description,
-    alternates:{canonical:`/products/${product.slug}`},
-    openGraph:{title:product.name,description:product.description,url:`/products/${product.slug}`,type:'website'},
-  };
+  return pageMetadata(product.seo_title || product.name,product.seo_description || product.description || product.short_description,`/products/${product.slug}`,product.share_image || product.image || '/images/logo.webp');
 }
 export default async function ProductPage({params}:Props) {
   const product=await getProduct((await params).slug);
@@ -23,18 +22,18 @@ export default async function ProductPage({params}:Props) {
   const related=products.filter(p=>p.slug!==product.slug).slice(0,3);
   const jsonLd={'@context':'https://schema.org','@type':'Product',name:product.name,
     description:product.description,brand:{'@type':'Brand',name:site.brand_name},
-    image:new URL(product.image,SITE_ORIGIN).href,
+    ...(product.image?{image:new URL(product.image,SITE_ORIGIN).href}:{}),
     url:`${SITE_ORIGIN}/products/${product.slug}`,
     size:`${product.volume_ml} ml`,additionalProperty:[{'@type':'PropertyValue',name:'Bottles per carton',value:product.carton_units}]};
   return <main id="main" className="detail-page">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(jsonLd).replace(/</g,'\\u003c')}}/>
     <section className="product-detail" style={{'--world':product.primary_color,'--glow':product.secondary_color,'--ink':product.text_color} as CSSProperties}>
-      <Link className="detail-back" href="/products">← All flavours</Link>
+      <nav className="detail-back breadcrumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><Link href="/products">All flavours</Link><span aria-current="page">{product.flavor}</span></nav><StructuredData data={breadcrumbs([{name:"Home",path:"/"},{name:"All flavours",path:"/products"},{name:product.flavor,path:`/products/${product.slug}`}])}/>
       <div className="detail-image"><div className="detail-halo"/><ProductImage product={product} priority/></div>
       <div className="detail-copy"><span className="eyebrow">REFRESHING EVERY MOMENT</span><h1>{product.flavor}</h1>
         <p>{product.description}</p>
         <dl className="product-facts"><div><dt>Bottle size</dt><dd>{product.volume_ml} <span>ml</span></dd></div><div><dt>Per carton</dt><dd>{product.carton_units} <span>bottles</span></dd></div></dl>
-        {site.email && <a className="pill-button" href={`mailto:${site.email}?subject=${encodeURIComponent(`Enquiry about ${product.name}`)}`}>Enquire about {product.flavor} <span aria-hidden="true">↗</span></a>}
+        <Link className="pill-button" href={`/contact?product=${product.slug}`}>Enquire about {product.flavor} <span aria-hidden="true">↗</span></Link>
         {product.ingredients && <details className="product-info"><summary>Ingredients</summary><p>{product.ingredients}</p></details>}
         {product.nutrition && <details className="product-info"><summary>Nutrition information</summary><p>{product.nutrition}</p></details>}
       </div>

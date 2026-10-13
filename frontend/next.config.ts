@@ -1,5 +1,5 @@
 import type { NextConfig } from 'next';
-const apiOrigin = process.env.API_ORIGIN || 'http://127.0.0.1:8000';
+const apiOrigin = process.env.API_ORIGIN || 'http://127.0.0.1:8017';
 const config: NextConfig = {
   turbopack: { root: process.cwd() },
   output: 'standalone',
@@ -12,6 +12,7 @@ const config: NextConfig = {
       {key:'X-Content-Type-Options', value:'nosniff'},
       {key:'Referrer-Policy', value:'strict-origin-when-cross-origin'},
       {key:'X-Frame-Options', value:'DENY'},
+      {key:'Content-Security-Policy',value:"base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'"},
       {key:'Permissions-Policy', value:'camera=(), microphone=(), geolocation=()'},
     ]}];
   },

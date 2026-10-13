@@ -1,0 +1,9 @@
+{% extends "admin/index.html" %}
+{% block content %}
+<section class="studio-intro"><span>FRUZO / BRAND STUDIO</span><h2>A fresh look at your business.</h2><p>Manage your collection, answer customers and keep your brand up to date.</p></section>
+<section class="studio-stats" aria-label="Business overview">
+{% for card in dashboard_cards %}<a class="studio-stat" href="{{ card.url }}"><strong>{{ card.value }}</strong><span>{{ card.label }}</span></a>{% endfor %}
+</section>
+{{ block.super }}
+{% if recent_enquiries %}<section class="module studio-enquiries"><h2>Latest enquiries</h2><ul>{% for enquiry in recent_enquiries %}<li><a href="{% url 'admin:catalogue_enquiry_change' enquiry.pk %}">{{ enquiry.subject }}</a><span>{{ enquiry.name }} · {{ enquiry.get_status_display }} · {{ enquiry.submitted_at|date:"j M Y" }}</span></li>{% endfor %}</ul></section>{% endif %}
+{% endblock %}

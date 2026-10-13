@@ -12,6 +12,10 @@ export interface Product {
   description: string;
   image: string;
   assets: FlavorAsset[];
+  image_alt: string;
+  seo_title: string;
+  seo_description: string;
+  share_image: string;
   decoration_asset: string;
   primary_color: string;
   secondary_color: string;
@@ -34,4 +38,16 @@ export interface SiteContent {
   email: string;
   website: string;
   story: string;
+  phone: string;
+  instagram_url: string;
+  facebook_url: string;
+  contact_heading: string;
+  contact_intro: string;
+  footer_note: string;
+  seo_title: string;
+  seo_description: string;
+  privacy_notice: string;
+  updated_at: string;
 }
+
+export interface FAQ { id:number; question:string; answer:string; updated_at:string; }

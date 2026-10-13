@@ -20,9 +20,10 @@ export function createExperience(root:HTMLDivElement, products:Product[], simple
     });
     onChange(index,phase);
   }
-  mm.add({motion:'(prefers-reduced-motion: no-preference)', reduced:'(prefers-reduced-motion: reduce)', desktop:'(min-width: 800px)'}, context=>{
-    const {motion,desktop}=context.conditions!;
-    if(!motion || simple) {
+  mm.add({motion:'(prefers-reduced-motion: no-preference)', reduced:'(prefers-reduced-motion: reduce)', desktop:'(min-width: 800px)', short:'(max-height: 599px)'}, context=>{
+    const {motion,desktop,short}=context.conditions!;
+    lastIndex=-1; lastPhase='';
+    if(!motion || simple || short) {
       root.dataset.mode='simple';
       navigation.current=index=>document.getElementById(`flavor-${products[index].slug}`)?.scrollIntoView({behavior:'instant',block:'start'});
       const observer=new IntersectionObserver(entries=>{
@@ -39,6 +40,8 @@ export function createExperience(root:HTMLDivElement, products:Product[], simple
     const first=scenes[0];
     const start=2.6;
     const duration=start+products.length-1+0.85;
+    // Pin setup briefly collapses the fallback document; preserve restored scroll.
+    const restoredScroll=window.scrollY;
     root.dataset.enhanced='true';
     const timeline=gsap.timeline({defaults:{ease:'none'},scrollTrigger:{
       trigger:root, pin:stage, start:'top top', end:()=>`+=${(desktop?650:540)*duration}`,
@@ -101,8 +104,11 @@ export function createExperience(root:HTMLDivElement, products:Product[], simple
     };
     const leave=()=>{setTilt.forEach(n=>{n.x(0);n.y(0);});};
     stage.addEventListener('pointermove',move);stage.addEventListener('pointerleave',leave);
-    current(0,'intro');
     ScrollTrigger.refresh();
+    window.scrollTo({top:restoredScroll,behavior:'instant'});
+    ScrollTrigger.update();
+    const time=(timeline.scrollTrigger?.progress || 0)*duration;
+    current(Math.max(0,Math.min(products.length-1,Math.floor(time-start+0.48))),time<0.55?'intro':time<start?'assembly':'explore');
     return ()=>{
       stage.removeEventListener('pointermove',move);stage.removeEventListener('pointerleave',leave);
       delete root.dataset.enhanced;

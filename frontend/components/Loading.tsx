@@ -1,0 +1,1 @@
+export default function Loading() {return <main id="main" className="editorial-page" aria-busy="true"><p role="status">Loading a little Fruzo happinessâ€¦</p><div className="loading-skeleton" aria-hidden="true"/></main>;}

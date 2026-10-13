@@ -4,11 +4,12 @@ import { useEffect,useRef } from 'react';
 export function CollectionMotion({children}:{children:React.ReactNode}) {
   const root=useRef<HTMLDivElement>(null);
   useEffect(()=>{
-    let dispose:(()=>void)|undefined, cancelled=false;
+    let dispose:(()=>void)|undefined, cancelled=false, generation=0;
     const initialize=async()=>{
+      const version=++generation;
       dispose?.();
       const [{default:gsap},{ScrollTrigger}]=await Promise.all([import('gsap'),import('gsap/ScrollTrigger')]);
-      if(cancelled||!root.current) return;
+      if(cancelled||version!==generation||!root.current) return;
       gsap.registerPlugin(ScrollTrigger);
       const media=gsap.matchMedia(root.current);
       media.add('(prefers-reduced-motion: no-preference)',()=>{

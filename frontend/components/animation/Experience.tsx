@@ -54,7 +54,7 @@ export function Experience({products, site}: {products: Product[]; site: SiteCon
       if (Math.abs(dx)>65 && Math.abs(dx)>Math.abs(dy)*1.4) choose(active+(dx<0?1:-1));
     }} onPointerCancel={()=>{touch.current=null;}}>
       {products.map((product,index)=><FlavorScene key={product.slug} product={product} index={index} />)}
-      <section className="hero-overlay" aria-labelledby="hero-title">
+      <section className="hero-overlay" aria-label={site.headline}>
         <div className="hero-overline"><span>{site.tagline.toUpperCase()}</span><span>{site.brand_name.toUpperCase()} / {products.length} FLAVOURS</span></div>
         <p id="hero-title" className="hero-headline" aria-hidden="true">{headline[0].toUpperCase()}<br /><span>{headline.slice(1).join(' ').toUpperCase()}</span></p>
         <div className="hero-note"><span className="tiny-star" aria-hidden="true">✳</span><p>A little bottle.<br />A whole world<br />of flavours.</p></div>
@@ -65,14 +65,19 @@ export function Experience({products, site}: {products: Product[]; site: SiteCon
       {products[0].decoration_asset && <div className="ingredient ingredient-one" aria-hidden="true"><Image src={products[0].decoration_asset} alt="" width={280} height={170} sizes="180px" /></div>}
       <div className="ingredient ingredient-two" aria-hidden="true"><Image src="/images/leaf.webp" alt="" width={170} height={125} sizes="110px" /></div>
       <nav className="flavor-controls" aria-label="Choose a flavour" onKeyDown={event=>{
-        if(event.key==='ArrowRight'||event.key==='ArrowLeft') {
-          event.preventDefault(); choose(active+(event.key==='ArrowRight'?1:-1));
-        } else if(event.key==='Home') {event.preventDefault(); choose(0);}
-        else if(event.key==='End') {event.preventDefault(); choose(products.length-1);}
+        if(!(event.target instanceof HTMLButtonElement) || !event.target.dataset.index) return;
+        const index=Number(event.target.dataset.index);
+        const next=event.key==='ArrowRight'?index+1:event.key==='ArrowLeft'?index-1:event.key==='Home'?0:event.key==='End'?products.length-1:null;
+        if(next===null)return;
+        event.preventDefault();
+        const target=Math.max(0,Math.min(next,products.length-1));
+        event.currentTarget.querySelector<HTMLButtonElement>(`button[data-index="${target}"]`)?.focus({preventScroll:true});
+        choose(target);
       }}>
         <div className="explorer-count"><span>{String(active+1).padStart(2,'0')}</span><span className="count-rule"/><span>{String(products.length).padStart(2,'0')}</span></div>
+        <label className="mobile-flavor-select"><span className="sr-only">Choose a flavour</span><select value={active} onChange={event=>choose(Number(event.target.value))}>{products.map((product,index)=><option key={product.slug} value={index}>{product.flavor}</option>)}</select></label>
         <div className="flavor-dots">{products.map((product,index)=><button key={product.slug}
-          aria-label={`Show ${product.flavor}`} aria-current={active===index?'true':undefined}
+          data-index={index} aria-label={`Show ${product.flavor}`} aria-current={active===index?'true':undefined}
           title={product.flavor} onClick={()=>choose(index)}><span style={{backgroundColor:product.primary_color}}/><span className="dot-name">{product.flavor}</span></button>)}</div>
         <Link href="/products" className="all-flavours-link">View all <span aria-hidden="true">↗</span></Link>
       </nav>
