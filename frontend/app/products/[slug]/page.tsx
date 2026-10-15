@@ -39,7 +39,19 @@ export default async function ProductPage({params}:Props) {
       </div>
     </section>
     {product.catalogue_page && <section className="catalogue-feature"><div><span className="eyebrow">THE FRUZO CATALOGUE</span><h2>SMALL BOTTLE.<br />BIG HAPPINESS.</h2><p>{product.name}, as featured in our collection.</p><Link className="text-link" href="/products">Discover the range <span aria-hidden="true">↗</span></Link></div><Image src={`/images/catalogue-${product.catalogue_page}.webp`} alt={`Fruzo catalogue featuring ${product.flavor}`} width={683} height={1024} sizes="(max-width:800px) 85vw, 420px"/></section>}
-    <section className="related-products"><span className="eyebrow">KEEP EXPLORING</span><h2>YOUR NEXT FLAVOUR.</h2><div className="product-grid">{related.map(p=><Link key={p.slug} href={`/products/${p.slug}`} className="product-tile" style={{'--world':p.primary_color,'--ink':p.text_color} as CSSProperties}><h3>{p.flavor}</h3><ProductImage product={p}/><div className="tile-bottom"><span>Explore flavour</span><span aria-hidden="true">↗</span></div></Link>)}</div></section>
+    <section className="related-products"><span className="eyebrow">KEEP EXPLORING</span><h2>YOUR NEXT FLAVOUR.</h2><div className="product-grid">{related.map(p=><Link key={p.slug} href={`/products/${p.slug}`} className="product-tile" style={{'--world':p.primary_color,'--ink':p.text_color} as CSSProperties}><h3>{p.flavor}</h3><ProductImage product={p}/><div className="tile-bottom"><span>Explore flavour</span><svg
+  aria-hidden="true"
+  width="18"
+  height="18"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="2"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+>
+  <path d="M7 17 17 7M7 7h10v10" />
+</svg></div></Link>)}</div></section>
     <Footer site={site}/>
   </main>;
 }

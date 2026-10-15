@@ -33,7 +33,19 @@ async function ProductsContent() {
         style={{'--world':product.primary_color,'--ink':product.text_color} as CSSProperties}>
         <div className="tile-top"><span>{String(index+1).padStart(2,'0')}</span><span>{product.volume_ml} ML</span></div>
         <h2>{product.flavor}</h2><ProductImage product={{...product, image: flavourImage}} priority={index<2} width={1080} height={1350}/>
-        <div className="tile-bottom"><span>Explore flavour</span><span aria-hidden="true">↗</span></div>
+        <div className="tile-bottom"><span>Explore flavour</span><svg
+  aria-hidden="true"
+  width="18"
+  height="18"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="2"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+>
+  <path d="M7 17 17 7M7 7h10v10" />
+</svg></div>
       </Link>;
     })}</div>
   </section><Footer site={site}/></main>;
