@@ -1,0 +1,142 @@
+[
+  {
+    "mobile": false,
+    "f": 0,
+    "time": 0,
+    "paused": true,
+    "rect": {
+      "top": 150,
+      "bottom": 920
+    }
+  },
+  {
+    "mobile": false,
+    "f": 0.25,
+    "time": 1.990261,
+    "paused": true,
+    "rect": {
+      "top": 150,
+      "bottom": 920
+    }
+  },
+  {
+    "mobile": false,
+    "f": 0.5,
+    "time": 3.968423,
+    "paused": true,
+    "rect": {
+      "top": 150,
+      "bottom": 920
+    }
+  },
+  {
+    "mobile": false,
+    "f": 0.75,
+    "time": 5.967506,
+    "paused": true,
+    "rect": {
+      "top": 150,
+      "bottom": 920
+    }
+  },
+  {
+    "mobile": false,
+    "f": 1,
+    "time": 7.948691,
+    "paused": true,
+    "rect": {
+      "top": 150.0009765625,
+      "bottom": 920.0009765625
+    }
+  },
+  {
+    "mobile": false,
+    "f": 0.5,
+    "time": 3.987165,
+    "paused": true,
+    "rect": {
+      "top": 150,
+      "bottom": 920
+    }
+  },
+  {
+    "mobile": false,
+    "f": 0,
+    "time": 0.013316,
+    "paused": true,
+    "rect": {
+      "top": 150,
+      "bottom": 920
+    }
+  },
+  {
+    "mobile": true,
+    "f": 0,
+    "time": 0,
+    "paused": true,
+    "rect": {
+      "top": 150,
+      "bottom": 744
+    }
+  },
+  {
+    "mobile": true,
+    "f": 0.25,
+    "time": 1.990038,
+    "paused": true,
+    "rect": {
+      "top": 150,
+      "bottom": 744
+    }
+  },
+  {
+    "mobile": true,
+    "f": 0.5,
+    "time": 3.974612,
+    "paused": true,
+    "rect": {
+      "top": 150,
+      "bottom": 744
+    }
+  },
+  {
+    "mobile": true,
+    "f": 0.75,
+    "time": 5.959551,
+    "paused": true,
+    "rect": {
+      "top": 150,
+      "bottom": 744
+    }
+  },
+  {
+    "mobile": true,
+    "f": 1,
+    "time": 7.942685,
+    "paused": true,
+    "rect": {
+      "top": 150.0009765625,
+      "bottom": 744.0009765625
+    }
+  },
+  {
+    "mobile": true,
+    "f": 0.5,
+    "time": 3.981938,
+    "paused": true,
+    "rect": {
+      "top": 150,
+      "bottom": 744
+    }
+  },
+  {
+    "mobile": true,
+    "f": 0,
+    "time": 0.013332,
+    "paused": true,
+    "rect": {
+      "top": 150,
+      "bottom": 744
+    }
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "path": "Fruzodrinks.pdf",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\.dockerignore",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\.env",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\.env.example",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\Dockerfile",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\manage.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\requirements.txt",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\img\\fruzo-apple-png.png",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\img\\fruzo-cola-png-1.png",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\img\\fruzo-dew-png.png",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\img\\fruzo-green-png.png",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\img\\fruzo-lemon-png.png",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\img\\fruzo-mangopng.png",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\img\\fruzo-mixed-png.png",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\img\\fruzo-nannaripng.png",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\img\\fruzo-pineapple-png.png",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\img\\fruzo-salt-png.png",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\img\\mango_3D.png",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\admin.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\admin_site.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\apps.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\middleware.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\models.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\serializers.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\services.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\tests.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\test_business.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\validators.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\views.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\__init__.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\config\\admin.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\config\\origins.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\config\\urls.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\config\\wsgi.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\config\\__init__.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\templates\\admin\\base_site.html",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\templates\\admin\\brand_index.html",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\config\\settings\\base.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\config\\settings\\development.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\config\\settings\\production.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\config\\settings\\static_build.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\config\\settings\\__init__.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\management\\__init__.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\migrations\\0001_initial.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\migrations\\0002_product_decoration_asset.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\migrations\\0003_alter_sitecontent_id.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\migrations\\0004_faq_ratelimitbucket_product_image_alt_and_more.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\migrations\\__init__.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\static\\catalogue\\studio.css",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\static\\catalogue\\fonts\\anton-latin-400-normal.woff2",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\static\\catalogue\\fonts\\anton-LICENSE.txt",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\static\\catalogue\\fonts\\dm-sans-latin-standard-normal.woff2",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\static\\catalogue\\fonts\\dm-sans-LICENSE.txt",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\management\\commands\\cleanup_rate_limits.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\management\\commands\\retry_enquiry_notifications.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\management\\commands\\seed_catalogue.py",
+    "unchanged": true
+  },
+  {
+    "path": "fruzo\\backend\\catalogue\\management\\commands\\__init__.py",
+    "unchanged": true
+  },
+  {
+    "path": "backend logical database",
+    "unchanged": true
+  }
+]

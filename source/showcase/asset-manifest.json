@@ -1,0 +1,316 @@
+{
+  "bottles": {
+    "mango": {
+      "source": "mango_3D.png",
+      "crop": {
+        "file": "mango_3D.png",
+        "x": 144,
+        "y": 268,
+        "w": 350,
+        "h": 880,
+        "cy": 589,
+        "ch": 309,
+        "cx": 318
+      },
+      "normalized": {
+        "cx": 136.4659090909091,
+        "labelY": 246.22159090909093,
+        "labelH": 237.01704545454547,
+        "bodyRatio": 1,
+        "capRatio": 1
+      },
+      "url": "/cinematic/source/mango-front.webp"
+    },
+    "apple": {
+      "source": "fruzo-apple-png.png",
+      "crop": {
+        "file": "fruzo-apple-png.png",
+        "x": 340,
+        "y": 125,
+        "w": 420,
+        "h": 1090,
+        "cy": 537,
+        "ch": 346,
+        "cx": 550
+      },
+      "normalized": {
+        "cx": 137.045871559633,
+        "labelY": 255.13761467889907,
+        "labelH": 214.26605504587155,
+        "bodyRatio": 0.91,
+        "capRatio": 0.9
+      },
+      "url": "/cinematic/source/apple-front.webp"
+    },
+    "cola": {
+      "source": "fruzo-cola-png-1.png",
+      "crop": {
+        "file": "fruzo-cola-png-1.png",
+        "x": 337,
+        "y": 125,
+        "w": 420,
+        "h": 1100,
+        "cy": 535,
+        "ch": 343,
+        "cx": 547
+      },
+      "normalized": {
+        "cx": 136.86363636363637,
+        "labelY": 251.5909090909091,
+        "labelH": 210.47727272727272,
+        "bodyRatio": 0.91,
+        "capRatio": 0.9
+      },
+      "url": "/cinematic/source/cola-front.webp"
+    },
+    "dew": {
+      "source": "fruzo-dew-png.png",
+      "crop": {
+        "file": "fruzo-dew-png.png",
+        "x": 340,
+        "y": 125,
+        "w": 420,
+        "h": 1100,
+        "cy": 533,
+        "ch": 345,
+        "cx": 550
+      },
+      "normalized": {
+        "cx": 136.86363636363637,
+        "labelY": 250.36363636363637,
+        "labelH": 211.70454545454547,
+        "bodyRatio": 0.91,
+        "capRatio": 0.9
+      },
+      "url": "/cinematic/source/dew-front.webp"
+    },
+    "green-apple": {
+      "source": "fruzo-green-png.png",
+      "crop": {
+        "file": "fruzo-green-png.png",
+        "x": 340,
+        "y": 125,
+        "w": 420,
+        "h": 1100,
+        "cy": 535,
+        "ch": 345,
+        "cx": 550
+      },
+      "normalized": {
+        "cx": 136.86363636363637,
+        "labelY": 251.5909090909091,
+        "labelH": 211.70454545454547,
+        "bodyRatio": 0.91,
+        "capRatio": 0.9
+      },
+      "url": "/cinematic/source/green-apple-front.webp"
+    },
+    "lemon": {
+      "source": "fruzo-lemon-png.png",
+      "crop": {
+        "file": "fruzo-lemon-png.png",
+        "x": 340,
+        "y": 125,
+        "w": 420,
+        "h": 1100,
+        "cy": 535,
+        "ch": 345,
+        "cx": 550
+      },
+      "normalized": {
+        "cx": 136.86363636363637,
+        "labelY": 251.5909090909091,
+        "labelH": 211.70454545454547,
+        "bodyRatio": 0.91,
+        "capRatio": 0.9
+      },
+      "url": "/cinematic/source/lemon-front.webp"
+    },
+    "mixed-fruits": {
+      "source": "fruzo-mixed-png.png",
+      "crop": {
+        "file": "fruzo-mixed-png.png",
+        "x": 340,
+        "y": 125,
+        "w": 420,
+        "h": 1100,
+        "cy": 535,
+        "ch": 345,
+        "cx": 550
+      },
+      "normalized": {
+        "cx": 136.86363636363637,
+        "labelY": 251.5909090909091,
+        "labelH": 211.70454545454547,
+        "bodyRatio": 0.91,
+        "capRatio": 0.9
+      },
+      "url": "/cinematic/source/mixed-fruits-front.webp"
+    },
+    "nannari": {
+      "source": "fruzo-nannaripng.png",
+      "crop": {
+        "file": "fruzo-nannaripng.png",
+        "x": 340,
+        "y": 125,
+        "w": 420,
+        "h": 1100,
+        "cy": 535,
+        "ch": 345,
+        "cx": 550
+      },
+      "normalized": {
+        "cx": 136.86363636363637,
+        "labelY": 251.5909090909091,
+        "labelH": 211.70454545454547,
+        "bodyRatio": 0.91,
+        "capRatio": 0.9
+      },
+      "url": "/cinematic/source/nannari-front.webp"
+    },
+    "pineapple": {
+      "source": "fruzo-pineapple-png.png",
+      "crop": {
+        "file": "fruzo-pineapple-png.png",
+        "x": 340,
+        "y": 125,
+        "w": 420,
+        "h": 1100,
+        "cy": 535,
+        "ch": 345,
+        "cx": 550
+      },
+      "normalized": {
+        "cx": 136.86363636363637,
+        "labelY": 251.5909090909091,
+        "labelH": 211.70454545454547,
+        "bodyRatio": 0.91,
+        "capRatio": 0.9
+      },
+      "url": "/cinematic/source/pineapple-front.webp"
+    },
+    "lemon-salt": {
+      "source": "fruzo-salt-png.png",
+      "crop": {
+        "file": "fruzo-salt-png.png",
+        "x": 340,
+        "y": 125,
+        "w": 420,
+        "h": 1100,
+        "cy": 535,
+        "ch": 345,
+        "cx": 550
+      },
+      "normalized": {
+        "cx": 136.86363636363637,
+        "labelY": 251.5909090909091,
+        "labelH": 211.70454545454547,
+        "bodyRatio": 0.91,
+        "capRatio": 0.9
+      },
+      "url": "/cinematic/source/lemon-salt-front.webp"
+    }
+  },
+  "ingredients": [
+    {
+      "slug": "mango",
+      "source": "fruzo-mangopng.png",
+      "crop": {
+        "x": 650,
+        "y": 1000,
+        "w": 280,
+        "h": 230
+      },
+      "url": "/cinematic/source/mango-piece.webp"
+    },
+    {
+      "slug": "apple",
+      "source": "fruzo-apple-png.png",
+      "crop": {
+        "x": 645,
+        "y": 990,
+        "w": 280,
+        "h": 240
+      },
+      "url": "/cinematic/source/apple-piece.webp"
+    },
+    {
+      "slug": "green-apple",
+      "source": "fruzo-green-png.png",
+      "crop": {
+        "x": 660,
+        "y": 975,
+        "w": 280,
+        "h": 245
+      },
+      "url": "/cinematic/source/green-apple-piece.webp"
+    },
+    {
+      "slug": "lemon",
+      "source": "fruzo-lemon-png.png",
+      "crop": {
+        "x": 730,
+        "y": 965,
+        "w": 260,
+        "h": 260
+      },
+      "url": "/cinematic/source/lemon-piece.webp"
+    },
+    {
+      "slug": "lemon-salt",
+      "source": "fruzo-salt-png.png",
+      "crop": {
+        "x": 730,
+        "y": 965,
+        "w": 260,
+        "h": 260
+      },
+      "url": "/cinematic/source/lemon-salt-piece.webp"
+    },
+    {
+      "slug": "pineapple",
+      "source": "fruzo-pineapple-png.png",
+      "crop": {
+        "x": 645,
+        "y": 975,
+        "w": 285,
+        "h": 260
+      },
+      "url": "/cinematic/source/pineapple-piece.webp"
+    },
+    {
+      "slug": "dew",
+      "source": "fruzo-dew-png.png",
+      "crop": {
+        "x": 750,
+        "y": 965,
+        "w": 260,
+        "h": 260
+      },
+      "url": "/cinematic/source/dew-piece.webp"
+    },
+    {
+      "slug": "cola",
+      "source": "fruzo-cola-png-1.png",
+      "crop": {
+        "x": 210,
+        "y": 430,
+        "w": 185,
+        "h": 195
+      },
+      "url": "/cinematic/source/cola-piece.webp"
+    },
+    {
+      "slug": "mixed-fruits",
+      "source": "fruzo-mixed-png.png",
+      "crop": {
+        "x": 150,
+        "y": 980,
+        "w": 240,
+        "h": 250
+      },
+      "url": "/cinematic/source/mixed-fruits-piece.webp"
+    }
+  ],
+  "rear": "Mango rear reference withheld: unconfirmed 250 ml artwork; branded provisional rear contains no packaging facts."
+}

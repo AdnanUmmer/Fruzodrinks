@@ -1,0 +1,7 @@
+const {chromium}=require('C:/Users/10adn/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'); const fs=require('fs');
+(async()=>{fs.mkdirSync('qa/visual-audit',{recursive:true});const b=await chromium.launch({channel:'msedge',headless:true});const p=await b.newPage({viewport:{width:1440,height:1000}});const errors=[];p.on('pageerror',e=>errors.push(e.message));
+for(const angle of ['front','side','rear','three-quarter']){await p.goto('http://127.0.0.1:3001?productProof='+angle);await p.waitForSelector('[data-webgl=true]');await p.locator('.carousel-stage').evaluate(e=>scrollTo(0,e.getBoundingClientRect().top+scrollY+e.clientHeight/2-innerHeight/2));await p.waitForTimeout(1700);await p.screenshot({path:'qa/visual-audit/mango-'+angle+'.png'});}
+await p.goto('http://127.0.0.1:3001');await p.waitForSelector('[data-webgl=true]');await p.evaluate(()=>scrollTo(0,1400));await p.waitForTimeout(1600);await p.screenshot({path:'qa/visual-audit/pouring.png'});
+const top=await p.locator('.delivery-chapter').evaluate(e=>e.getBoundingClientRect().top+scrollY);const distance=await p.locator('.delivery-chapter').evaluate(e=>e.clientHeight-innerHeight);
+for(const [name,progress] of [['entry',-.2],['open',0],['fall',.46],['landed',.72],['closed',1]]){await p.evaluate(y=>scrollTo(0,y),top+distance*progress);await p.waitForTimeout(1600);await p.screenshot({path:'qa/visual-audit/delivery-'+name+'.png'});}
+console.log(JSON.stringify({errors,top,distance}));await b.close()})().catch(e=>{console.error(e);process.exit(1)});

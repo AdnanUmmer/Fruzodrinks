@@ -1,0 +1,161 @@
+{
+  "results": [
+    {
+      "name": "Mango opened",
+      "ok": true
+    },
+    {
+      "name": "Mango persistent liquid",
+      "ok": true
+    },
+    {
+      "name": "Mango one DOM slot",
+      "ok": true
+    },
+    {
+      "name": "Lemon opened",
+      "ok": true
+    },
+    {
+      "name": "Lemon persistent liquid",
+      "ok": true
+    },
+    {
+      "name": "Lemon one DOM slot",
+      "ok": true
+    },
+    {
+      "name": "Lemon Salt opened",
+      "ok": true
+    },
+    {
+      "name": "Lemon Salt persistent liquid",
+      "ok": true
+    },
+    {
+      "name": "Lemon Salt one DOM slot",
+      "ok": true
+    },
+    {
+      "name": "Dew opened",
+      "ok": true
+    },
+    {
+      "name": "Dew persistent liquid",
+      "ok": true
+    },
+    {
+      "name": "Dew one DOM slot",
+      "ok": true
+    },
+    {
+      "name": "Apple opened",
+      "ok": true
+    },
+    {
+      "name": "Apple persistent liquid",
+      "ok": true
+    },
+    {
+      "name": "Apple one DOM slot",
+      "ok": true
+    },
+    {
+      "name": "Pineapple opened",
+      "ok": true
+    },
+    {
+      "name": "Pineapple persistent liquid",
+      "ok": true
+    },
+    {
+      "name": "Pineapple one DOM slot",
+      "ok": true
+    },
+    {
+      "name": "Mixed Fruits opened",
+      "ok": true
+    },
+    {
+      "name": "Mixed Fruits persistent liquid",
+      "ok": true
+    },
+    {
+      "name": "Mixed Fruits one DOM slot",
+      "ok": true
+    },
+    {
+      "name": "Green Apple opened",
+      "ok": true
+    },
+    {
+      "name": "Green Apple persistent liquid",
+      "ok": true
+    },
+    {
+      "name": "Green Apple one DOM slot",
+      "ok": true
+    },
+    {
+      "name": "Nannari opened",
+      "ok": true
+    },
+    {
+      "name": "Nannari persistent liquid",
+      "ok": true
+    },
+    {
+      "name": "Nannari one DOM slot",
+      "ok": true
+    },
+    {
+      "name": "Cola opened",
+      "ok": true
+    },
+    {
+      "name": "Cola persistent liquid",
+      "ok": true
+    },
+    {
+      "name": "Cola one DOM slot",
+      "ok": true
+    },
+    {
+      "name": "rapid changes resolve",
+      "ok": true
+    },
+    {
+      "name": "delivery closing",
+      "ok": true
+    },
+    {
+      "name": "delivery falling",
+      "ok": true
+    },
+    {
+      "name": "delivery landing",
+      "ok": true
+    },
+    {
+      "name": "delivery packed",
+      "ok": true
+    },
+    {
+      "name": "closed before packing",
+      "ok": true
+    },
+    {
+      "name": "no packing liquid",
+      "ok": true
+    },
+    {
+      "name": "snapshot ignores changes",
+      "ok": true
+    },
+    {
+      "name": "reverse unlock",
+      "ok": true
+    }
+  ],
+  "error": "Input file is missing: frontend/public/cinematic/source/null-front.webp"
+}

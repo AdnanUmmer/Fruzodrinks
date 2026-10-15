@@ -1,0 +1,86 @@
+[
+  {
+    "name": "pause retains flavour",
+    "ok": true
+  },
+  {
+    "name": "autoplay advances",
+    "ok": true
+  },
+  {
+    "name": "focused controls pause autoplay",
+    "ok": true
+  },
+  {
+    "name": "keyboard selection",
+    "ok": true
+  },
+  {
+    "name": "desktop drag advances",
+    "ok": true
+  },
+  {
+    "name": "route /about",
+    "ok": true
+  },
+  {
+    "name": "route /products",
+    "ok": true
+  },
+  {
+    "name": "route /contact?product=mango",
+    "ok": true
+  },
+  {
+    "name": "route /distributor",
+    "ok": true
+  },
+  {
+    "name": "route /faq",
+    "ok": true
+  },
+  {
+    "name": "route /products/mango",
+    "ok": true
+  },
+  {
+    "name": "route /products/lemon",
+    "ok": true
+  },
+  {
+    "name": "route /products/lemon-salt",
+    "ok": true
+  },
+  {
+    "name": "route /products/cola",
+    "ok": true
+  },
+  {
+    "name": "route /products/dew",
+    "ok": true
+  },
+  {
+    "name": "route /products/apple",
+    "ok": true
+  },
+  {
+    "name": "route /products/pineapple",
+    "ok": true
+  },
+  {
+    "name": "route /products/mixed-fruits",
+    "ok": true
+  },
+  {
+    "name": "route /products/green-apple",
+    "ok": true
+  },
+  {
+    "name": "route /products/nannari",
+    "ok": true
+  },
+  {
+    "name": "WebGL fallback",
+    "ok": true
+  }
+]

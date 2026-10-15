@@ -1,0 +1,136 @@
+[
+  {
+    "name": "large wheel moderated",
+    "passed": true
+  },
+  {
+    "name": "regular wheel responsive",
+    "passed": true
+  },
+  {
+    "name": "repeated fast wheel progresses",
+    "passed": true
+  },
+  {
+    "name": "360 view front",
+    "passed": true,
+    "detail": {
+      "engine": "three.js r186",
+      "rotationDegrees": "0.0",
+      "mode": "journey",
+      "deliveryProgress": "0.000",
+      "activeFlavour": "mango",
+      "capOpen": "0.000",
+      "liquid": "0.000"
+    }
+  },
+  {
+    "name": "360 view quarter",
+    "passed": true,
+    "detail": {
+      "engine": "three.js r186",
+      "rotationDegrees": "89.9",
+      "mode": "journey",
+      "deliveryProgress": "0.000",
+      "activeFlavour": "mango",
+      "capOpen": "1.000",
+      "liquid": "1.000"
+    }
+  },
+  {
+    "name": "360 view rear",
+    "passed": true,
+    "detail": {
+      "engine": "three.js r186",
+      "rotationDegrees": "180.2",
+      "mode": "journey",
+      "deliveryProgress": "0.000",
+      "activeFlavour": "mango",
+      "capOpen": "1.000",
+      "liquid": "1.000"
+    }
+  },
+  {
+    "name": "360 view three-quarter",
+    "passed": true,
+    "detail": {
+      "engine": "three.js r186",
+      "rotationDegrees": "270.1",
+      "mode": "journey",
+      "deliveryProgress": "0.000",
+      "activeFlavour": "mango",
+      "capOpen": "1.000",
+      "liquid": "1.000"
+    }
+  },
+  {
+    "name": "360 view full-turn",
+    "passed": true,
+    "detail": {
+      "engine": "three.js r186",
+      "rotationDegrees": "360.0",
+      "mode": "journey",
+      "deliveryProgress": "0.000",
+      "activeFlavour": "mango",
+      "capOpen": "0.799",
+      "liquid": "0.000"
+    }
+  },
+  {
+    "name": "reverse opens coherently",
+    "passed": true
+  },
+  {
+    "name": "reverse closes cap",
+    "passed": true
+  },
+  {
+    "name": "keyboard scroll preserved",
+    "passed": true
+  },
+  {
+    "name": "anchor bypasses wheel limiter",
+    "passed": true
+  },
+  {
+    "name": "actual 3D pitch and depth",
+    "passed": true,
+    "detail": {
+      "carouselReady": "true",
+      "journeyTilt": "-2.544922",
+      "journeyTurn": "0.548905",
+      "journeyDepth": "-219.561907",
+      "journeyRoll": "0.179642",
+      "journeyCatchup": "-0.28694240000004356",
+      "docked": "false",
+      "journeyReady": "true",
+      "webgl": "true",
+      "cinematicProgress": "1"
+    }
+  },
+  {
+    "name": "fall settles readable",
+    "passed": true,
+    "detail": {
+      "carouselReady": "true",
+      "journeyTilt": "0",
+      "journeyTurn": "0",
+      "journeyDepth": "-0.000037",
+      "journeyRoll": "0",
+      "journeyCatchup": "-0.31977740000002086",
+      "docked": "false",
+      "journeyReady": "true",
+      "webgl": "true",
+      "cinematicProgress": "1"
+    }
+  },
+  {
+    "name": "reverse falling state",
+    "passed": true
+  },
+  {
+    "name": "no runtime errors",
+    "passed": true,
+    "detail": []
+  }
+]

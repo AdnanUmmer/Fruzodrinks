@@ -1,0 +1,24 @@
+{
+  "results": [
+    "render mango",
+    "render mango",
+    "render mango",
+    "render mango",
+    "render mango",
+    "render mango",
+    "render mango",
+    "render mango",
+    "render mango",
+    "render mango",
+    "ArrowLeft direction 10",
+    "ArrowRight direction 11",
+    "ArrowRight direction 12",
+    "ArrowLeft direction 13",
+    "rapid input settles open",
+    "no runtime errors",
+    "mobile no overflow",
+    "reduced motion no WebGL",
+    "reduced autoplay paused"
+  ],
+  "errors": []
+}

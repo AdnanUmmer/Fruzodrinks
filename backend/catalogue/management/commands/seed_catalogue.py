@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from catalogue.models import Product, SiteContent
+from catalogue.models import FAQ, Product, SiteContent
 
 PRODUCTS = [
     ('mango','Mango',5,'#F8B536','#FFD878','#31552C','#173B26'),
@@ -13,6 +13,14 @@ PRODUCTS = [
     ('green-apple','Green Apple',6,'#AAD969','#DBEFA8','#225C30','#173B26'),
     ('nannari','Nannari',6,'#D89B60','#F4CD9B','#60351C','#402D20'),
     ('cola','Cola',3,'#4F2324','#7F3D31','#FFE4AC','#FFF4D8'),
+]
+
+FAQS = [
+    ('What makes our juices special?', 'Every bottle is crafted to bring you a burst of fruity goodness. We focus on delicious flavours, refreshing taste, and a little happiness in every sip.'),
+    ('Are your juices made with real fruit?', "Our juices are inspired by the natural goodness and delicious flavours of fruits. Check each bottle's ingredient label for its exact fruit content and ingredients."),
+    ('Do your juices need to be refrigerated?', 'For the best drinking experience, we recommend enjoying our juices chilled. Follow the storage instructions on the bottle to keep your juice fresh.'),
+    ('What flavours are available?', "From tropical mango to other fruity favourites, we're all about bringing exciting flavours to every sip. Explore our collection to discover your next favourite."),
+    ('How can I become a distributor or retail partner?', "We'd love to grow with you! Simply visit our Become a Distributor section, fill out the enquiry form with your business details, and our team will get in touch to discuss potential opportunities."),
 ]
 
 class Command(BaseCommand):
@@ -36,4 +44,11 @@ class Command(BaseCommand):
             'email': 'info@fruzodrinks.com', 'website': 'https://www.fruzodrinks.com',
             'story': 'Fruzo by Almas Refreshment and Beverages. Kottopadam, Mannarkkad, Palakkad district, Kerala, India.',
         })
-        self.stdout.write(self.style.SUCCESS(f'Catalogue ready: {Product.objects.count()} products.'))
+        for order, (question, answer) in enumerate(FAQS):
+            FAQ.objects.get_or_create(
+                question=question,
+                defaults={'answer': answer, 'display_order': order, 'active': True},
+            )
+        self.stdout.write(self.style.SUCCESS(
+            f'Catalogue ready: {Product.objects.count()} products, {FAQ.objects.filter(active=True).count()} active FAQs.'
+        ))

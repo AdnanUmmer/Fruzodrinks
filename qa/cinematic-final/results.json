@@ -1,0 +1,401 @@
+{
+  "results": [
+    {
+      "name": "large wheel limited inside hero",
+      "passed": true,
+      "detail": 260
+    },
+    {
+      "name": "regular wheel remains responsive",
+      "passed": true
+    },
+    {
+      "name": "angle front",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "0.0",
+        "mode": "journey",
+        "activeFlavour": "mango",
+        "capOpen": "0.000",
+        "liquid": "0.000"
+      }
+    },
+    {
+      "name": "angle quarter",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "89.9",
+        "mode": "journey",
+        "activeFlavour": "mango",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "angle rear",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "180.2",
+        "mode": "journey",
+        "activeFlavour": "mango",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "angle three-quarter",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "270.1",
+        "mode": "journey",
+        "activeFlavour": "mango",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "angle full-turn",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "360.0",
+        "mode": "journey",
+        "activeFlavour": "mango",
+        "capOpen": "0.799",
+        "liquid": "0.000"
+      }
+    },
+    {
+      "name": "reverse rotation",
+      "passed": true
+    },
+    {
+      "name": "reverse closes cap",
+      "passed": true
+    },
+    {
+      "name": "keyboard scroll allowed",
+      "passed": true
+    },
+    {
+      "name": "anchor navigation bypasses limiter",
+      "passed": true
+    },
+    {
+      "name": "persistent open Mango",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "360.0",
+        "mode": "carousel",
+        "activeFlavour": "mango",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "enquiry selection Mango",
+      "passed": true,
+      "detail": "/contact?product=mango"
+    },
+    {
+      "name": "persistent open Lemon",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "360.0",
+        "mode": "carousel",
+        "activeFlavour": "lemon",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "enquiry selection Lemon",
+      "passed": true,
+      "detail": "/contact?product=lemon"
+    },
+    {
+      "name": "persistent open Lemon Salt",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "360.0",
+        "mode": "carousel",
+        "activeFlavour": "lemon-salt",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "enquiry selection Lemon Salt",
+      "passed": true,
+      "detail": "/contact?product=lemon-salt"
+    },
+    {
+      "name": "persistent open Dew",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "360.0",
+        "mode": "carousel",
+        "activeFlavour": "dew",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "enquiry selection Dew",
+      "passed": true,
+      "detail": "/contact?product=dew"
+    },
+    {
+      "name": "persistent open Apple",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "360.0",
+        "mode": "carousel",
+        "activeFlavour": "apple",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "enquiry selection Apple",
+      "passed": true,
+      "detail": "/contact?product=apple"
+    },
+    {
+      "name": "persistent open Pineapple",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "360.0",
+        "mode": "carousel",
+        "activeFlavour": "pineapple",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "enquiry selection Pineapple",
+      "passed": true,
+      "detail": "/contact?product=pineapple"
+    },
+    {
+      "name": "persistent open Mixed Fruits",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "360.0",
+        "mode": "carousel",
+        "activeFlavour": "mixed-fruits",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "enquiry selection Mixed Fruits",
+      "passed": true,
+      "detail": "/contact?product=mixed-fruits"
+    },
+    {
+      "name": "persistent open Green Apple",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "360.0",
+        "mode": "carousel",
+        "activeFlavour": "green-apple",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "enquiry selection Green Apple",
+      "passed": true,
+      "detail": "/contact?product=green-apple"
+    },
+    {
+      "name": "persistent open Nannari",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "360.0",
+        "mode": "carousel",
+        "activeFlavour": "nannari",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "enquiry selection Nannari",
+      "passed": true,
+      "detail": "/contact?product=nannari"
+    },
+    {
+      "name": "persistent open Cola",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "360.0",
+        "mode": "carousel",
+        "activeFlavour": "cola",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "enquiry selection Cola",
+      "passed": true,
+      "detail": "/contact?product=cola"
+    },
+    {
+      "name": "effects persist after entrance",
+      "passed": true
+    },
+    {
+      "name": "rapid selection resolves to latest",
+      "passed": true,
+      "detail": {
+        "engine": "three.js r186",
+        "rotationDegrees": "360.0",
+        "mode": "carousel",
+        "activeFlavour": "green-apple",
+        "capOpen": "1.000",
+        "liquid": "1.000"
+      }
+    },
+    {
+      "name": "carousel keyboard selection",
+      "passed": true
+    },
+    {
+      "name": "drag settles open",
+      "passed": true
+    },
+    {
+      "name": "route /about",
+      "passed": true
+    },
+    {
+      "name": "route /products",
+      "passed": true
+    },
+    {
+      "name": "route /faq",
+      "passed": true
+    },
+    {
+      "name": "route /distributor",
+      "passed": true
+    },
+    {
+      "name": "route /contact",
+      "passed": true
+    },
+    {
+      "name": "route /products/mango",
+      "passed": true
+    },
+    {
+      "name": "ten product routes",
+      "passed": true,
+      "detail": [
+        "/products/mango",
+        "/products/lemon",
+        "/products/lemon-salt",
+        "/products/dew",
+        "/products/apple",
+        "/products/pineapple",
+        "/products/mixed-fruits",
+        "/products/green-apple",
+        "/products/nannari",
+        "/products/cola"
+      ]
+    },
+    {
+      "name": "/products/mango",
+      "passed": true
+    },
+    {
+      "name": "/products/lemon",
+      "passed": true
+    },
+    {
+      "name": "/products/lemon-salt",
+      "passed": true
+    },
+    {
+      "name": "/products/dew",
+      "passed": true
+    },
+    {
+      "name": "/products/apple",
+      "passed": true
+    },
+    {
+      "name": "/products/pineapple",
+      "passed": true
+    },
+    {
+      "name": "/products/mixed-fruits",
+      "passed": true
+    },
+    {
+      "name": "/products/green-apple",
+      "passed": true
+    },
+    {
+      "name": "/products/nannari",
+      "passed": true
+    },
+    {
+      "name": "/products/cola",
+      "passed": true
+    },
+    {
+      "name": "contact product preselected",
+      "passed": true
+    },
+    {
+      "name": "empty contact form invalid",
+      "passed": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile touch swipe changes flavour",
+      "passed": true
+    },
+    {
+      "name": "mobile centre stays open",
+      "passed": true
+    },
+    {
+      "name": "reduced motion skips WebGL",
+      "passed": true
+    },
+    {
+      "name": "reduced motion removes extended chapter",
+      "passed": true
+    },
+    {
+      "name": "reduced motion carousel usable",
+      "passed": true
+    },
+    {
+      "name": "no runtime errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": []
+}

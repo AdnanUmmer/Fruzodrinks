@@ -1,0 +1,26 @@
+{
+  "checks": [
+    "only video, no box or WebGL",
+    "only two navigation chevrons",
+    "flavour 0",
+    "flavour 1",
+    "flavour 2",
+    "flavour 3",
+    "flavour 4",
+    "flavour 5",
+    "flavour 6",
+    "flavour 7",
+    "flavour 8",
+    "flavour 9",
+    "next wrap",
+    "previous wrap",
+    "rapid settles one",
+    "mobile swipe",
+    "no mobile overflow",
+    "reduced motion skips video fetch",
+    "reduced no pin",
+    "video failure static fallback",
+    "no runtime errors"
+  ],
+  "errors": []
+}
