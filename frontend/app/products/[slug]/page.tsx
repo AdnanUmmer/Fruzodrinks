@@ -33,12 +33,36 @@ export default async function ProductPage({params}:Props) {
       <div className="detail-copy"><span className="eyebrow">REFRESHING EVERY MOMENT</span><h1>{product.flavor}</h1>
         <p>{product.description}</p>
         <dl className="product-facts"><div><dt>Bottle size</dt><dd>{product.volume_ml} <span>ml</span></dd></div><div><dt>Per carton</dt><dd>{product.carton_units} <span>bottles</span></dd></div></dl>
-        <Link className="pill-button" href={`/contact?product=${product.slug}`}>Enquire about {product.flavor} <span aria-hidden="true">↗</span></Link>
+        <Link className="pill-button" href={`/contact?product=${product.slug}`}>Enquire about {product.flavor} <svg
+  aria-hidden="true"
+  width="18"
+  height="18"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="2"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+>
+  <path d="M7 17 17 7M7 7h10v10" />
+</svg></Link>
         {product.ingredients && <details className="product-info"><summary>Ingredients</summary><p>{product.ingredients}</p></details>}
         {product.nutrition && <details className="product-info"><summary>Nutrition information</summary><p>{product.nutrition}</p></details>}
       </div>
     </section>
-    {product.catalogue_page && <section className="catalogue-feature"><div><span className="eyebrow">THE FRUZO CATALOGUE</span><h2>SMALL BOTTLE.<br />BIG HAPPINESS.</h2><p>{product.name}, as featured in our collection.</p><Link className="text-link" href="/products">Discover the range <span aria-hidden="true">↗</span></Link></div><Image src={`/images/catalogue-${product.catalogue_page}.webp`} alt={`Fruzo catalogue featuring ${product.flavor}`} width={683} height={1024} sizes="(max-width:800px) 85vw, 420px"/></section>}
+    {product.catalogue_page && <section className="catalogue-feature"><div><span className="eyebrow">THE FRUZO CATALOGUE</span><h2>SMALL BOTTLE.<br />BIG HAPPINESS.</h2><p>{product.name}, as featured in our collection.</p><Link className="text-link" href="/products">Discover the range <svg
+  aria-hidden="true"
+  width="18"
+  height="18"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="2"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+>
+  <path d="M7 17 17 7M7 7h10v10" />
+</svg></Link></div><Image src={`/images/catalogue-${product.catalogue_page}.webp`} alt={`Fruzo catalogue featuring ${product.flavor}`} width={683} height={1024} sizes="(max-width:800px) 85vw, 420px"/></section>}
     <section className="related-products"><span className="eyebrow">KEEP EXPLORING</span><h2>YOUR NEXT FLAVOUR.</h2><div className="product-grid">{related.map(p=><Link key={p.slug} href={`/products/${p.slug}`} className="product-tile" style={{'--world':p.primary_color,'--ink':p.text_color} as CSSProperties}><h3>{p.flavor}</h3><ProductImage product={p}/><div className="tile-bottom"><span>Explore flavour</span><svg
   aria-hidden="true"
   width="18"
